@@ -119,6 +119,7 @@ func main() {
 	fmt.Println("解码后的 Product:", decodedProduct)
 }
 
+// Exercise 4
 func add(a int, b int) int {
 	return a + b
 }
@@ -142,6 +143,7 @@ func remainDer(f, g int) (int, int) {
 // }
 
 // quotient, _ := divide(10, 3)
+
 // OOP in Golang Exercise 1: Structs and Methods
 
 type Person struct {
@@ -171,27 +173,22 @@ type Manager struct {
 }
 
 // 3
-// 1. 定义接口 Shape
 type Shape interface {
 	Area() float64
 }
 
-// 2. Circle 结构体实现 Shape 接口
 type Circle struct {
 	Radius float64
 }
 
-// Circle 实现了 Area 方法，计算圆的面积
 func (c Circle) Area() float64 {
 	return math.Pi * c.Radius * c.Radius
 }
 
-// 3. Rectangle 结构体实现 Shape 接口
 type Rectangle struct {
 	Width, Height float64
 }
 
-// Rectangle 实现了 Area 方法，计算矩形的面积
 func (r Rectangle) Area() float64 {
 	return r.Width * r.Height
 }
