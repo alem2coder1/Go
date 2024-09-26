@@ -1,33 +1,19 @@
 package main
 
 import (
-	"Assignment2/Web/services"
-	"fmt"
+	"Assignment2/Web/apihelper"
+	"net/http"
 
-	"gorm.io/driver/mysql"
-	"gorm.io/gorm"
+	"github.com/gorilla/mux"
 )
 
 func main() {
-	// 设置 MySQL 连接字符串
-	dsn := "user:password@tcp(127.0.0.1:3306)/dbname?charset=utf8mb4&parseTime=True&loc=Local"
+	router := mux.NewRouter()
+	router.HandleFunc("/api/users", apihelper.GetAllUsersHandler).Methods("GET")
+	router.HandleFunc("/api/users", apihelper.AddUserHandler).Methods("POST")
+	router.HandleFunc("/api/users/{id}", apihelper.UpdateUserHandler).Methods("PUT")
+	router.HandleFunc("/api/users/{id}", apihelper.DeleteUserHandler).Methods("DELETE")
 
-	// 连接到 MySQL 数据库
-	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
-	if err != nil {
-		fmt.Println("Failed to connect to the database:", err)
-		return
-	}
-
-	// 初始化 GORM 数据库连接
-	services.InitDBGorm(db)
-
-	// 获取用户数据
-	users, err := services.GetUsersGORM()
-	if err != nil {
-		fmt.Println("Error fetching users:", err)
-		return
-	}
-
-	fmt.Println("Users:", users)
+	http.Handle("/", router)
+	http.ListenAndServe(":8080", nil)
 }
