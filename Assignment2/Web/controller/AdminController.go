@@ -4,6 +4,7 @@ import (
 	"Assignment2/Model/user"
 	"Assignment2/Web/dbhelper"
 	"errors"
+	"gorm.io/gorm"
 )
 
 func AllUsers() ([]user.Users, error) {
@@ -34,6 +35,9 @@ func AddUser(item *user.Users) (string, error) {
 	if item.Password == "" {
 		return "password", errors.New("password is required")
 	}
+	if item.Role == "" {
+		return "Role", errors.New("Role is required")
+	}
 	connection, err := dbhelper.GetOpenConnection()
 	if err != nil {
 		return "error", err
@@ -42,6 +46,7 @@ func AddUser(item *user.Users) (string, error) {
 		res := connection.Create(&user.Users{
 			Name:     item.Name,
 			Surname:  item.Surname,
+			Role:     item.Role,
 			Age:      item.Age,
 			Birthday: item.Birthday,
 			Job:      item.Job,
@@ -77,6 +82,7 @@ func UpdateUser(item *user.Users) (string, error) {
 			user.Name = item.Name
 			user.Surname = item.Surname
 			user.Age = item.Age
+			user.Role = item.Role
 			user.Birthday = item.Birthday
 			user.Job = item.Job
 			user.Email = item.Email
@@ -115,4 +121,28 @@ func DeleteUser(item *user.Users) (string, error) {
 		}
 	}
 	return "success", nil
+}
+
+func Login(item *user.Users) (string, error) {
+	connection, err := dbhelper.GetOpenConnection()
+	if err != nil {
+		return "", err
+	}
+
+	if item.Email == "" {
+		return "", errors.New("email is required")
+	}
+	if item.Password == "" {
+		return "", errors.New("password is required")
+	}
+
+	var foundUser user.Users
+	if err := connection.Where("status = ? AND email = ? AND password = ?", 0, item.Email, item.Password).First(&foundUser).Error; err != nil {
+		if errors.Is(err, gorm.ErrRecordNotFound) {
+			return "", errors.New("user not found")
+		}
+		return "", err
+	}
+
+	return "Success", nil
 }

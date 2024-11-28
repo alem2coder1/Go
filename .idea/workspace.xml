@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6ae8366e-c1b3-4f8e-b137-6058ef66abc5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Go.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/backend/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/backend/.idea/Assignment2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/backend/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/backend/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/backend/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/backend/Model/user/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/backend/Model/user/role.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/backend/Model/user/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/backend/Web/Web" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/backend/Web/apihelper/api.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/backend/Web/controller/AdminController.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/backend/Web/controller/RoleController.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/backend/Web/dbhelper/Utilities.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/backend/Web/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/backend/Web/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/backend/Web/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/(tables)/add-user/page.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/(tables)/add-user/validating-multiple-rules.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/(tables)/edit-user/page.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/(tables)/edit-user/validating-multiple-rules.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/(tables)/tailwindui-table/checkbox-with-action.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/(tables)/tailwindui-table/collapsible-table.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/(tables)/tailwindui-table/column-sticky.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/(tables)/tailwindui-table/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/(tables)/tailwindui-table/deleUser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/(tables)/tailwindui-table/getUser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/(tables)/tailwindui-table/jwtUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/(tables)/tailwindui-table/layout.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/(tables)/tailwindui-table/page.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/(tables)/tailwindui-table/row-editing-dialog.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/(tables)/tailwindui-table/selection-operation.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/(tables)/tailwindui-table/simple-table.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/(tables)/tailwindui-table/user-table-status.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/(tables)/tailwindui-table/user-table.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/(tables)/tailwindui-table/userlist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/(tables)/tailwindui-table/vertical-line.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/(tables)/tailwindui-table/with-checkbox.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/.idea/front.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/config/axios.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/config/calendar.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/config/email.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/config/menus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/config/project-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/config/site.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/config/thems.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/config/user.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/jsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/middleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/mylogic/add-user/page.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/mylogic/add-user/validating-multiple-rules.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/mylogic/edit-user/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/mylogic/loginUser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/mylogic/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/next-env.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/next.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/files/example.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/admin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/author-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/author-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/baby.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/banana.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/blog-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/blog-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/blog-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/blog-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/book-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/book-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/book-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/book-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/book-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/book-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/busket.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/colored-img-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/colored-img-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/colored-img-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/colored-img-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/comming-soon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/cover-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/dashtail-screenshot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/dropbox-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/email-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/email-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/email-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/email-blog-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/email-blog-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/figma.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/flag-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/flag-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/flag-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/headphone-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/headphone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/img-1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/img-2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/man-with-laptop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/mic.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/orange-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/orange.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/pr-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/pr-10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/pr-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/pr-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/pr-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/pr-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/pr-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/pr-7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/pr-8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/pr-9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/rd-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/rd-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/rd-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/rd-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/rd-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/rd-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/react.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/short-image-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/short-image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/slider-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/slider-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/stripe-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/support-girl.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/switch-bg-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/switch-bg-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/thumbnail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/user-cover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/all-img/water-fall.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/auth/apple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/auth/auth3-dark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/auth/auth3-light.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/auth/bg-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/auth/bg-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/auth/bg-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/auth/facebook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/auth/github.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/auth/google.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/auth/line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/auth/mountain.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/auth/sky.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/auth/slide-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/auth/slide-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/auth/slide-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/auth/twitter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/avatar/avatar-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/avatar/avatar-10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/avatar/avatar-11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/avatar/avatar-12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/avatar/avatar-13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/avatar/avatar-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/avatar/avatar-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/avatar/avatar-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/avatar/avatar-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/avatar/avatar-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/avatar/avatar-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/avatar/avatar-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/avatar/avatar-9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/avatar/user-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/avatar/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/card/card1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/card/card2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/card/card3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/card/card4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/card/card5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/card/card6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/card/card7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/card/card8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/card/card9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/card/ecard1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/card/ecard2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/card/ecard3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/card/ecard4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/chart/chart-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/chart/chart-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/chart/chart-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/chart/chart-4.avif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/chart/chart-5.avif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/chart/clock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/chart/insta.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/chart/messenger.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/chart/paint.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/chart/rocket.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/country/bangladesh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/country/brazil.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/country/france.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/country/india.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/country/spain.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/country/usa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/doc/theme.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/email-template/fb-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/email-template/img-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/email-template/img-10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/email-template/img-11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/email-template/img-12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/email-template/img-13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/email-template/img-14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/email-template/img-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/email-template/img-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/email-template/img-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/email-template/img-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/email-template/img-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/email-template/img-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/email-template/img-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/email-template/img-9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/email-template/instagram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/email-template/pr-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/email-template/pr-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/email-template/pr-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/email-template/twiiter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/error/dark-401.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/error/dark-403.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/error/dark-404.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/error/dark-419.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/error/dark-429.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/error/dark-500.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/error/dark-503.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/error/light-401.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/error/light-403.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/error/light-404.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/error/light-419.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/error/light-429.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/error/light-500.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/error/light-503.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/files/ai.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/files/figma.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/files/html.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/files/imagemountain.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/files/imageninja.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/files/imagetemple.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/files/pdf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/files/zip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/home/bg-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/home/bg-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/home/bg-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/home/bg-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/home/img-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/home/img-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/home/img-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/home/img-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/home/img-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/home/img-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/home/shape-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/home/shape-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/home/welcome-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/home/welcome.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Charts - Apex Chart - Area.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Charts - Charts JS - Others.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Charts - Re Charts - Bar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Charts - Unovis - Area.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Component - Advanced UI - Affix.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Component - Advanced UI - Steps.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Component - Advanced UI - Timeline.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Component - Advanced UI - Tour.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Component - Advanced UI - Tree.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Component - Button.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Component - KBD.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Diagram - Organaization Tree.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Diagram - Overview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Form Elements - Input Group.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Form Elements - Input.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Form Elements - Radio.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Form Elements - Select.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Form Elements - Switch.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Icons - Custom Icon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Icons - Iconify.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Icons - Lucid Icon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Map -  Google Map.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Map - React Leaflet.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Map - Unovis Leaflet Maps.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Map - Vector Map.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Pages - Coming Soon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Pages - Error 403.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Pages - Invoice.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Pages - Sign In 1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Pages - Sign Up 2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Table - Data Table.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Table - Simple Table.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/Table - Tailwind Table.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/accordion.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/alert.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/analytics.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/app-calender.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/app-chat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/app-email.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/app-kanban.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/app-project.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/app-task.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/appex-chart.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/appex-chartpng.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/auth-label-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/author-label-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/avatar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/button.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/calender.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/chart-js.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/chart-unovis.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/chart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/comming-soon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/component -badge.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/contact-image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/contact-shape-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/contact-shape-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/custom-icon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/dashboard-blur.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/dashboard-screenshot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/diagram.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/ecommerce.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/embla-carousel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/error-page.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/featured.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/footer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/group-image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/hero-icon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/lucide-icon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/plus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/project-dashboard.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/react-hot-toast.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/react-leaflet.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/react-table.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/rechart-js.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/unovis-chart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/unovis.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/landing-page/vector-map.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/logo/logo-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/logo/logo-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/logo/logo-black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/logo/logo-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/logo/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/projects/ass.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/projects/dd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/projects/dp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/projects/konst.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/projects/productify.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/projects/project-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/projects/project-placeholder.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/projects/uradvisor.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/social/android.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/social/behance-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/social/behance.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/social/dribble-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/social/dribble.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/social/facebook-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/social/facebook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/social/figma.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/social/github-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/social/github-circle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/social/github.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/social/instagram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/social/iphone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/social/laravel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/social/linkedin-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/social/linkedin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/social/mac.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/social/pinterest-circle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/social/pinterest.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/social/react.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/social/reddit-circle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/social/reddit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/social/seo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/social/twitter-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/social/twitter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/social/web.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/social/whatsapp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/social/windows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/social/wordpress.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/social/youtube.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/utility/comming-soon-dark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/utility/comming-soon-light.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/utility/construction-dark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/utility/construction-light.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/watermark/codeshaperlogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/watermark/codeshaperlogo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/images/watermark/watermarkimage.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/next.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/public/vercel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/application.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/authentication.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/bar-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/bar-top.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/bell.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/book.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/building-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/building.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/calendar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/calender-check.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/calender.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/cart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/chart-area.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/chart-bar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/chart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/clip-board.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/clip-board2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/color-palater.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/components.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/cup.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/custom-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/dashboard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/device.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/diamond.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/docs-arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/docs-check.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/dsearch.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/envelope.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/error.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/expand.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/files.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/flag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/google.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/graph.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/grid.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/heroicon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/list-fill.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/list.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/location.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/lucide-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/mail.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/mail2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/map.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/map2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/medical.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/menu-bar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/message.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/monitor.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/moon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/note.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/note2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/note3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/pages.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/phone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/pointer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/pretention-chart-line.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/pretention-chart-line2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/settings.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/sheild.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/stacks.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/sun.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/user-plus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/user-sign.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/user.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/duel-tone/web.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/home/alert.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/home/check-mark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/home/check-shape.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/home/counter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/home/crown.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/home/cup-bar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/home/cup.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/home/docs.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/home/eye.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/home/foldertree.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/home/increase.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/home/note.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/home/session.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/home/spam.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/home/stack.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/home/users.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/layout/horizontal.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/layout/semibox.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/layout/vertical.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/svg/man-vector.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/front/tailwind.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment3/backend/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment3/backend/.idea/Assignment2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment3/backend/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment3/backend/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment3/backend/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment3/backend/Model/user/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment3/backend/Model/user/role.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment3/backend/Model/user/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment3/backend/Web/Web" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment3/backend/Web/apihelper/api.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment3/backend/Web/controller/AdminController.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment3/backend/Web/controller/RoleController.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment3/backend/Web/dbhelper/Utilities.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment3/backend/Web/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment3/backend/Web/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment3/backend/Web/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week9/Model/user/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week9/Model/user/role.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week9/Model/user/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week9/dbhelper/Utilities.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week9/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment2/Model/user/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Model/user/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment2/Web/apihelper/api.go" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Web/apihelper/api.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment2/Web/controller/AdminController.go" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Web/controller/AdminController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment2/Web/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Web/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment2/Web/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Web/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment2/Web/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Web/main.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file:///opt/homebrew/Cellar/go/1.23.0/libexec" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/week9/go.mod" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2oBv15QKMbj3pl8lsmBlrGiX9ud" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultGoTemplateProperty": "Go File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "/Users/alemkaken/Documents/Github/University/Go/week9",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/alemkaken/Documents/Github/University/Go/main.go"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/week9" />
+      <recent name="$PROJECT_DIR$/assignment3" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-gosdk-5df93f7ad4aa-df9ad98b711f-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-242.23339.24" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-GO-242.23339.24" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>
