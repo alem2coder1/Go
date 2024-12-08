@@ -1,19 +1,18 @@
 package controller
 
 import (
-	"backend/Model/user"
 	"backend/Web/dbhelper"
 	"errors"
 	"github.com/dgrijalva/jwt-go"
 	"time"
 )
 
-func AllRole() ([]user.Role, error) {
+func AllRole() ([]Model.Role, error) {
 	connection, err := dbhelper.GetOpenConnection()
 	if err != nil {
 		return nil, err
 	}
-	var role []user.Role
+	var role []Model.Role
 	res := connection.Where("status = 0").Find(&role)
 	if res.Error != nil {
 		return nil, errors.New("error retrieving users: " + res.Error.Error())

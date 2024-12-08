@@ -5,7 +5,6 @@ import (
 	"github.com/golang-jwt/jwt/v4"
 	"gorm.io/gorm"
 	"time"
-	"week9/Model/user"
 	"week9/dbhelper"
 )
 
@@ -14,7 +13,7 @@ type LoginResponse struct {
 	Message string `json:"message"`
 }
 
-func Login(item *user.Users) (*LoginResponse, error) {
+func Login(item *Model.Users) (*LoginResponse, error) {
 	connection, err := dbhelper.GetOpenConnection()
 	if err != nil {
 		return nil, err
@@ -26,7 +25,7 @@ func Login(item *user.Users) (*LoginResponse, error) {
 		return nil, errors.New("password is required")
 	}
 
-	var foundUser user.Users
+	var foundUser Model.Users
 	if err := connection.Where("status = ? AND email = ? AND password = ?", 0, item.Email, item.Password).First(&foundUser).Error; err != nil {
 		if errors.Is(err, gorm.ErrRecordNotFound) {
 			return nil, errors.New("user not found")
@@ -35,7 +34,7 @@ func Login(item *user.Users) (*LoginResponse, error) {
 	}
 
 	var userRole string
-	if err := connection.Model(&user.Users{}).Where("email = ?", item.Email).Select("role").Scan(&userRole).Error; err != nil {
+	if err := connection.Model(&Model.Users{}).Where("email = ?", item.Email).Select("role").Scan(&userRole).Error; err != nil {
 		return nil, err
 	}
 

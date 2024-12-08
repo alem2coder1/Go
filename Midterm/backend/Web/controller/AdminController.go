@@ -1,18 +1,17 @@
 package controller
 
 import (
-	"backend/Model/user"
 	"backend/Web/dbhelper"
 	"errors"
 	"gorm.io/gorm"
 )
 
-func AllUsers() ([]user.Users, error) {
+func AllUsers() ([]Model.Users, error) {
 	connection, err := dbhelper.GetOpenConnection()
 	if err != nil {
 		return nil, err
 	}
-	var users []user.Users
+	var users []Model.Users
 	res := connection.Where("status = 0").Find(&users)
 	if res.Error != nil {
 		return nil, errors.New("error retrieving users: " + res.Error.Error())
@@ -23,7 +22,7 @@ func AllUsers() ([]user.Users, error) {
 	return users, nil
 }
 
-func GetUser(item *user.Users) (*user.Users, error) {
+func GetUser(item *Model.Users) (*Model.Users, error) {
 	if item.ID <= 0 {
 		return nil, errors.New("id is required")
 	}
@@ -33,7 +32,7 @@ func GetUser(item *user.Users) (*user.Users, error) {
 		return nil, err
 	}
 
-	var user user.Users
+	var user Model.Users
 	res := connection.Where("status = 0 AND id = ?", item.ID).First(&user)
 	if res.Error != nil {
 		return nil, errors.New("user not found")
@@ -41,7 +40,7 @@ func GetUser(item *user.Users) (*user.Users, error) {
 
 	return &user, nil
 }
-func AddUser(item *user.Users) (string, error) {
+func AddUser(item *Model.Users) (string, error) {
 	if item.Name == "" {
 		return "name", errors.New("name is required")
 	}
@@ -62,7 +61,7 @@ func AddUser(item *user.Users) (string, error) {
 		return "error", err
 	}
 	if item.ID <= 0 {
-		res := connection.Create(&user.Users{
+		res := connection.Create(&Model.Users{
 			Name:     item.Name,
 			Surname:  item.Surname,
 			Role:     item.Role,
@@ -81,7 +80,7 @@ func AddUser(item *user.Users) (string, error) {
 	return "success", nil
 }
 
-func UpdateUser(item *user.Users) (string, error) {
+func UpdateUser(item *Model.Users) (string, error) {
 
 	if item.ID <= 0 {
 		return "id", errors.New("id is required")
@@ -92,7 +91,7 @@ func UpdateUser(item *user.Users) (string, error) {
 	}
 
 	if item.ID >= 0 {
-		var user user.Users
+		var user Model.Users
 		res := connection.Where("status = 0 AND id = ?", item.ID).First(&user)
 
 		if res.Error != nil {
@@ -101,7 +100,7 @@ func UpdateUser(item *user.Users) (string, error) {
 			user.Name = item.Name
 			user.Surname = item.Surname
 			user.Age = item.Age
-			user.Role = item.Role
+			Model.Role = item.Role
 			user.Birthday = item.Birthday
 			user.Job = item.Job
 			user.Email = item.Email
@@ -116,7 +115,7 @@ func UpdateUser(item *user.Users) (string, error) {
 	return "success", nil
 }
 
-func DeleteUser(item *user.Users) (string, error) {
+func DeleteUser(item *Model.Users) (string, error) {
 	if item.ID <= 0 {
 		return "id", errors.New("id is required")
 	}
@@ -126,7 +125,7 @@ func DeleteUser(item *user.Users) (string, error) {
 	}
 
 	if item.ID >= 0 {
-		var user user.Users
+		var user Model.Users
 		res := connection.Where("status = 0 AND id =? ", item.ID).First(&user)
 
 		if res.Error != nil {
@@ -147,7 +146,7 @@ type LoginResponse struct {
 	Message string `json:"message"`
 }
 
-func Login(item *user.Users) (*LoginResponse, error) {
+func Login(item *Model.Users) (*LoginResponse, error) {
 	connection, err := dbhelper.GetOpenConnection()
 	if err != nil {
 		return nil, err
@@ -159,7 +158,7 @@ func Login(item *user.Users) (*LoginResponse, error) {
 		return nil, errors.New("password is required")
 	}
 
-	var foundUser user.Users
+	var foundUser Model.Users
 	if err := connection.Where("status = ? AND email = ? AND password = ?", 0, item.Email, item.Password).First(&foundUser).Error; err != nil {
 		if errors.Is(err, gorm.ErrRecordNotFound) {
 			return nil, errors.New("user not found")
@@ -168,7 +167,7 @@ func Login(item *user.Users) (*LoginResponse, error) {
 	}
 
 	var userRole string
-	if err := connection.Model(&user.Users{}).Where("email = ?", item.Email).Select("role").Scan(&userRole).Error; err != nil {
+	if err := connection.Model(&Model.Users{}).Where("email = ?", item.Email).Select("role").Scan(&userRole).Error; err != nil {
 		return nil, err
 	}
 

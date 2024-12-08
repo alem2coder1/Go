@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8083:8083"
+    environment:
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_NAME=go_db
+      - DB_USER=go_user
+      - DB_PASSWORD=go_password
+    depends_on:
+      - db
+    networks:
+      - app-network
+
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: go_db
+      MYSQL_USER: go_user
+      MYSQL_PASSWORD: go_password
+    ports:
+      - "3306:3306"
+    networks:
+      - app-network
+
+  cache:
+    image: redis:6
+    ports:
+      - "6379:6379"
+
+networks:
+  app-network:
+    driver: bridge

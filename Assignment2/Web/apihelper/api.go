@@ -1,7 +1,6 @@
 package apihelper
 
 import (
-	"Assignment2/Model/user"
 	"Assignment2/Web/controller"
 	"encoding/json"
 	"net/http"
@@ -20,7 +19,7 @@ func GetAllUsersHandler(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(users)
 }
 func AddUserHandler(w http.ResponseWriter, r *http.Request) {
-	var newUser user.Users
+	var newUser Model.Users
 	err := json.NewDecoder(r.Body).Decode(&newUser)
 	if err != nil {
 		http.Error(w, "Invalid request payload", http.StatusBadRequest)
@@ -44,7 +43,7 @@ func UpdateUserHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	var updatedUser user.Users
+	var updatedUser Model.Users
 	err = json.NewDecoder(r.Body).Decode(&updatedUser)
 	if err != nil {
 		http.Error(w, "Invalid request payload", http.StatusBadRequest)
@@ -69,7 +68,7 @@ func DeleteUserHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	var userToDelete user.Users
+	var userToDelete Model.Users
 	userToDelete.ID = id
 
 	result, err := controller.DeleteUser(&userToDelete)
@@ -104,7 +103,7 @@ func LoginHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	var userToLogin user.Users
+	var userToLogin Model.Users
 	userToLogin.Email = loginRequest.Email
 	userToLogin.Password = loginRequest.Password
 

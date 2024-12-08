@@ -1,7 +1,6 @@
 package apihelper
 
 import (
-	"backend/Model/user"
 	"backend/Web/controller"
 	"github.com/gin-gonic/gin"
 	"net/http"
@@ -23,7 +22,7 @@ func GetUserHandler(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid user ID"})
 		return
 	}
-	userItem := &user.Users{ID: id}
+	userItem := &Model.Users{ID: id}
 	retrievedUser, err := controller.GetUser(userItem)
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
@@ -32,7 +31,7 @@ func GetUserHandler(c *gin.Context) {
 	c.JSON(http.StatusOK, retrievedUser)
 }
 func AddUserHandler(c *gin.Context) {
-	var newUser user.Users
+	var newUser Model.Users
 	if err := c.ShouldBindJSON(&newUser); err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid request payload"})
 		return
@@ -50,7 +49,7 @@ func UpdateUserHandler(c *gin.Context) {
 	if err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid user ID"})
 	}
-	var updatedUser user.Users
+	var updatedUser Model.Users
 	if err := c.ShouldBindJSON(&updatedUser); err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid request payload"})
 		return
@@ -71,7 +70,7 @@ func DeleteUserHandler(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid user ID"})
 		return
 	}
-	userToDelete := &user.Users{ID: id}
+	userToDelete := &Model.Users{ID: id}
 	result, err := controller.DeleteUser(userToDelete)
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
@@ -95,7 +94,7 @@ func LoginHandler(c *gin.Context) {
 		return
 	}
 
-	userToLogin := user.Users{
+	userToLogin := Model.Users{
 		Email:    loginRequest.Email,
 		Password: loginRequest.Password,
 	}
